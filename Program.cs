@@ -20,10 +20,7 @@ namespace GeometrGuru
         decimal S = (b*h)/2;
 
         System.Console.WriteLine("Area: " + S);
-
-
-
-
+        
      }
   }
 }
