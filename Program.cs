@@ -6,18 +6,18 @@ namespace GeometrGuru
      static void Main()
      {
         Console.WriteLine("Enter the base triangle");
-        Console.Write("b: ");
+        Console.Write("base of a triangle: ");
         string baseTriangle = Console.ReadLine();
 
         Console.WriteLine("Enter the height triangle");
-        Console.Write("h: ");
+        Console.Write("height of a triangle: ");
         string heightTriangle = Console.ReadLine();
 
         System.Console.WriteLine("Calculating Area...");
 
-        decimal b = decimal.Parse(baseTriangle);
-        decimal h = decimal.Parse(heightTriangle);
-        decimal S = (b*h)/2;
+        decimal triangleBase = decimal.Parse(baseTriangle);
+        decimal traiangleHeight = decimal.Parse(heightTriangle);
+        decimal S = (triangleBase * traiangleHeight) / 2;
 
         System.Console.WriteLine("Area: " + S);
         
