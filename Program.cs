@@ -13,14 +13,17 @@ namespace GeometrGuru
         Console.Write("height of a triangle: ");
         string heightTriangle = Console.ReadLine();
 
-        System.Console.WriteLine("Calculating Area...");
-
+        Console.WriteLine("Calculating Area...");
         decimal triangleBase = decimal.Parse(baseTriangle);
         decimal traiangleHeight = decimal.Parse(heightTriangle);
-        decimal S = (triangleBase * traiangleHeight) / 2;
 
-        System.Console.WriteLine("Area: " + S);
-        
+         if(traiangleHeight <= 0 || triangleBase <= triangleBase)
+              Console.WriteLine("Invalid input");
+         else 
+         {
+             decimal Surface = (triangleBase * traiangleHeight) / 2;
+             Console.WriteLine("Area: " + Surface);  
+         } 
      }
   }
 }
