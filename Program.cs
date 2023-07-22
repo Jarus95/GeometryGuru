@@ -17,7 +17,7 @@ namespace GeometrGuru
         decimal triangleBase = decimal.Parse(baseTriangle);
         decimal traiangleHeight = decimal.Parse(heightTriangle);
 
-         if(traiangleHeight <= 0 || triangleBase <= triangleBase)
+         if(traiangleHeight <= 0 || triangleBase <= 0)
               Console.WriteLine("Invalid input");
          else 
          {
