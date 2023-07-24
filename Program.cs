@@ -17,13 +17,9 @@ namespace GeometrGuru
         decimal triangleBase = decimal.Parse(baseTriangle);
         decimal traiangleHeight = decimal.Parse(heightTriangle);
 
-         if(traiangleHeight <= 0 || triangleBase <= 0)
-              Console.WriteLine("Invalid input");
-         else 
-         {
-             decimal Surface = (triangleBase * traiangleHeight) / 2;
-             Console.WriteLine("Area: " + Surface);  
-         } 
+        decimal Surface = (triangleBase * traiangleHeight) / 2;
+        Console.WriteLine("Area: " + Surface);  
+       } 
      }
   }
 }
