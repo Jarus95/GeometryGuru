@@ -1,10 +1,10 @@
-# GeometryGuru
+# GeometryGuru v1.0
 This program finds the area of a geometric figure
 
 Have a look at `Program.cs` file and you can see how I have used:
 
 * Console input/output
-* Find the area of a geometric figure
+* Arithmetic operations to find the area of triangle
 
 ## Demo
 ![demo](./Assets/demo-live.gif)
