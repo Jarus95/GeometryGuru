@@ -7,7 +7,7 @@ Have a look at `Program.cs` file and you can see how I have used:
 
 * Console input/output
 * Arithmetic operations to find the area of triangle
-* Logical operations for constructing a triangle
+* Logical operations for constructing a triangle.
 
 ## Demo
 ![demo](./Assets/demo-live-2.gif)
