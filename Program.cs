@@ -27,22 +27,29 @@ namespace GeometrGuru
                  Console.WriteLine($"height: {randomHeight}");
                  Console.WriteLine($"area: {randomArea}");
                  Console.Write($"Base: ");
+                try
+                {
+                   double userBase = double.Parse(Console.ReadLine());
+                   double CorrectBase =  (2 * randomArea) / randomHeight;
+ 
+                   userBase = Math.Round(userBase,  2);
+                   CorrectBase = Math.Round(CorrectBase, 2);
+ 
+                   if(userBase == CorrectBase)
+                   {
+                      Console.WriteLine("Correct !");
+                      isCorrect = true; 
+                   }
+                   else
+                   {
+                      Console.WriteLine("Wrong ! try again");
+                   }
+                }
 
-                 double userBase = double.Parse(Console.ReadLine());
-                 double CorrectBase =  (2 * randomArea) / randomHeight;
-
-                 userBase = Math.Round(userBase,  2);
-                 CorrectBase = Math.Round(CorrectBase, 2);
-
-                 if(userBase == CorrectBase)
-                 {
-                    Console.WriteLine("Correct !");
-                    isCorrect = true; 
-                 }
-                 else
-                 {
-                    Console.WriteLine("Wrong ! try again");
-                 }
+                catch(Exception ex)
+                {
+                  Console.WriteLine(ex.Message);
+                }
               }
 
               while(!isCorrect);
@@ -60,17 +67,25 @@ namespace GeometrGuru
                string heightTriangle = Console.ReadLine();
 
                Console.WriteLine("Calculating Area...");
-               decimal triangleBase = decimal.Parse(baseTriangle);
-               decimal traiangleHeight = decimal.Parse(heightTriangle);
-
-               if(traiangleHeight <= 0 || triangleBase <= 0)
-                    Console.WriteLine("Invalid input");
-               else 
+               try
                {
-                   decimal Surface = (triangleBase * traiangleHeight) / 2;
-                   Console.WriteLine("Area: " + Surface);  
+                  decimal triangleBase = decimal.Parse(baseTriangle);
+                  decimal traiangleHeight = decimal.Parse(heightTriangle);
+
+                  if(traiangleHeight <= 0 || triangleBase <= 0)
+                       Console.WriteLine("Invalid input");
+                  else 
+                  {
+                      decimal Surface = (triangleBase * traiangleHeight) / 2;
+                      Console.WriteLine("Area: " + Surface);  
+                  }                  
                }
 
+               catch(Exception ex)
+               {
+                  Console.WriteLine(ex.Message);
+               }
+                    
                break;             
            }
 
