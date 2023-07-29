@@ -9,6 +9,7 @@ Have a look at `Program.cs` file and you can see how I have used:
 * Arithmetic operations to find the area of triangle
 * Logical operations for constructing a triangle
 * Loop operations
+* The try-catch statement
 
 ## Demo
 ![demo](./Assets/demo-live-2.gif)
@@ -20,6 +21,7 @@ Have a look at `Program.cs` file and you can see how I have used:
 #### New Features
 * You have to find the base of the triangle 
 * Program to ask you to try again
+* Handle exceptions that might occur during execution
 
 ### **[v1.0](https://github.com/Jarus95/GeometryGuru/tree/releases/v1.0)**
 
